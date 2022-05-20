@@ -15299,7 +15299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saloonSoundTrigger: {fileID: 1599588615}
-  insideVolume: 0.3
+  insideVolume: 0.2
   outsideVolume: 0
 --- !u!82 &484827301
 AudioSource:
@@ -16684,7 +16684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saloonSoundTrigger: {fileID: 1599588615}
-  insideVolume: 0.8
+  insideVolume: 0.6
   outsideVolume: 0.2
 --- !u!82 &548444703
 AudioSource:
@@ -42523,6 +42523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1298244356}
   - component: {fileID: 1298244355}
+  - component: {fileID: 1298244357}
   m_Layer: 0
   m_Name: WIND
   m_TagString: Untagged
@@ -42641,6 +42642,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1298244357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298244354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e60cbfbf6f0ca04896e98e5cfaf1aad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saloonSoundTrigger: {fileID: 1599588615}
+  insideVolume: 0.1
+  outsideVolume: 0.5
 --- !u!1001 &1301638549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53153,8 +53169,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599588614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.47, y: 2.84, z: -12.87}
-  m_LocalScale: {x: 12.528394, y: 7.2131, z: 11.215823}
+  m_LocalPosition: {x: 14.47, y: 2.84, z: -13.06}
+  m_LocalScale: {x: 12.528394, y: 7.2131, z: 11.050502}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
