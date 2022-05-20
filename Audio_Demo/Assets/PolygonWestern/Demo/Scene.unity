@@ -40480,6 +40480,7 @@ GameObject:
   - component: {fileID: 1276274269}
   - component: {fileID: 1276274267}
   - component: {fileID: 1276274266}
+  - component: {fileID: 1276274271}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -40561,6 +40562,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1276274271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276274265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455241d876ac8b44d8a43bf97c726307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1593270716}
+  pivotOffset: {x: 0, y: 1.7, z: 0}
+  camOffset: {x: 0, y: 0.5, z: -3}
+  smooth: 10
+  horizontalAimingSpeed: 6
+  verticalAimingSpeed: 6
+  maxVerticalAngle: 30
+  minVerticalAngle: -60
+  XAxis: Analog X
+  YAxis: Analog Y
 --- !u!1001 &1277450185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51103,7 +51126,7 @@ MonoBehaviour:
   shoulderButton: Aim Shoulder
   crosshair: {fileID: 10914, guid: 0000000000000000f000000000000000, type: 0}
   aimTurnSmoothing: 0.15
-  aimPivotOffset: {x: 0.5, y: 1.2, z: 0}
+  aimPivotOffset: {x: 0.5, y: 1, z: 0}
   aimCamOffset: {x: 0, y: 0.4, z: -0.7}
 --- !u!114 &1593270711
 MonoBehaviour:
@@ -51190,6 +51213,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &1593270716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 440945e4a56e39647883c107277303e2, type: 3}
+  m_PrefabInstance: {fileID: 825938808}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1593270717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593270708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b86dbbaaa422b64d8a77740b0e66a5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flyButton: Fly
+  flySpeed: 4
+  sprintFactor: 2
+  flyMaxVerticalAngle: 60
 --- !u!1001 &1593765480
 PrefabInstance:
   m_ObjectHideFlags: 0
